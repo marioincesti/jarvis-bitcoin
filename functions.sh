@@ -7,5 +7,5 @@
 # XX is a short code for your plugin, ex: ww for Weather Wunderground
 # You can use translations provided in the language folders functions.sh
 jv_pg_bitcoin () {
-	curl -s 'http://api.coindesk.com/v1/bpi/currentprice.json' | jq -r '.bpi.EUR.rate_float' | cut -b 1-5
+	curl -s 'http://api.coindesk.com/v1/bpi/currentprice.json' | jq -r '.bpi.USD.rate_float' | cut -b 1-5
 }
